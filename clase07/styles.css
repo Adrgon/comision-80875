@@ -1,0 +1,484 @@
+/* ============================================
+   ESTILOS PARA LA CLASE DE DOM
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+#titulo-principal {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+.seccion {
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.seccion:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.seccion h2 {
+    color: #495057;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007bff;
+    font-size: 1.5em;
+}
+
+/* ============================================
+   EJEMPLO CONTAINERS
+   ============================================ */
+
+.ejemplo {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn-limpiar {
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    box-shadow: 0 2px 5px rgba(108, 117, 125, 0.3);
+}
+
+.btn-limpiar:hover {
+    background: linear-gradient(135deg, #5a6268, #495057);
+    box-shadow: 0 4px 10px rgba(108, 117, 125, 0.4);
+}
+
+/* ============================================
+   ELEMENTOS DE EJEMPLO ESPECÍFICOS
+   ============================================ */
+
+/* Elementos para demostración de clases */
+.item {
+    padding: 10px;
+    margin: 5px 0;
+    background: #e9ecef;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.destacado {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    font-weight: bold;
+}
+
+.resaltado {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+/* Lista de frutas */
+#lista-frutas {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-frutas li {
+    padding: 8px 15px;
+    margin: 5px 0;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#lista-frutas li.favorita {
+    background: #fff3cd;
+    border-color: #ffeaa7;
+    font-weight: bold;
+}
+
+/* Contenedor de navegación */
+#contenedor-navegacion {
+    padding: 15px;
+    border: 2px dashed #6c757d;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.hijo {
+    padding: 10px;
+    margin: 8px 0;
+    background: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Contenido manipulable */
+#contenido-manipulable {
+    min-height: 60px;
+    padding: 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+/* Elementos de formulario */
+#imagen-demo {
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#input-demo {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Contenedor dinámico */
+#contenedor-dinamico {
+    min-height: 100px;
+    padding: 15px;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    background: #f8f9fa;
+    margin-bottom: 15px;
+}
+
+.elemento-dinamico {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.elemento-dinamico.insertado {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ============================================
+   PANEL DE RESULTADOS
+   ============================================ */
+
+#resultados {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 2px solid #007bff;
+}
+
+
+
+.resultado {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.resultado strong {
+    color: #007bff;
+}
+
+.elemento-info, .elementos-info {
+    background: #e8f4fd;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid #b8daff;
+}
+
+.elemento-item {
+    padding: 4px 8px;
+    margin: 2px 0;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dee2e6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   CLASES DINÁMICAS PARA DEMOSTRACIONES
+   ============================================ */
+
+.resaltado-par {
+    background: #d1ecf1 !important;
+    border: 2px solid #bee5eb !important;
+    padding: 5px !important;
+}
+
+.resaltado-impar {
+    background: #f8d7da !important;
+    border: 2px solid #f5c6cb !important;
+    padding: 5px !important;
+}
+
+.animacion {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    #titulo-principal {
+        font-size: 2em;
+    }
+    
+    .seccion {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    #input-demo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo-principal {
+        font-size: 1.5em;
+    }
+    
+    .seccion h2 {
+        font-size: 1.2em;
+    }
+}
+
+/* ============================================
+   CÓDIGO ADICIONAL PARA MEJORAR LA EXPERIENCIA
+   ============================================ */
+
+/* Tooltip para botones */
+button[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* Scrollbar personalizada para el panel de resultados */
+
+
+/* Efecto de enfoque mejorado */
+button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+input:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+    border-color: #007bff;
+}
+
+/* ============================================
+   ESTILOS PARA SECCIÓN DE EVENTOS
+   ============================================ */
+
+#seccion-eventos .ejemplo h4 {
+    color: #6f42c1;
+    margin: 20px 0 10px 0;
+    padding: 8px 0;
+    border-bottom: 2px solid #6f42c1;
+    font-size: 1.1em;
+}
+
+#seccion-eventos p[id^="resultado-"] {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    min-height: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+#area-evento {
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+#area-evento:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+#area-evento:active {
+    transform: scale(0.98);
+}
+
+/* Estilos para botones de eventos */
+#seccion-eventos button {
+    margin: 5px 10px 5px 0;
+    transition: all 0.3s ease;
+}
+
+#seccion-eventos button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Animación para resultados actualizados */
+@keyframes updateResult {
+    0% { background-color: #fff3cd; }
+    100% { background-color: #f8f9fa; }
+}
+
+.resultado-actualizado {
+    animation: updateResult 0.5s ease-out;
+}
+
+/* ============================================
+   INDICADORES VISUALES
+   ============================================ */
+
+.ejemplo::before {
+    content: "💡";
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.resultado::before {
+    content: "▶️";
+    margin-right: 8px;
+}
+
+#seccion-eventos .ejemplo::before {
+    content: "⚡";
+    color: #6f42c1;
+}

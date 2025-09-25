@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de DOM - Métodos de Acceso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="titulo-principal">Clase de DOM: Métodos de Acceso</h1>
+            <p class="subtitulo">Ejemplos interactivos paso a paso</p>
+        </header>
+
+        <!-- Sección 1: Elementos para getElementById -->
+        <section class="seccion" id="seccion-1">
+            <h2>1. Acceso por ID</h2>
+            <div class="ejemplo">
+                <p id="parrafo-1">Este párrafo tiene ID "parrafo-1"</p>
+                <p id="parrafo-2" class="resaltado">Este párrafo tiene ID "parrafo-2" y clase "resaltado"</p>
+                <button id="btnID">Probar getElementById</button>
+            </div>
+        </section>
+
+        <!-- Sección 2: Elementos para getElementsByTagName -->
+        <section class="seccion" id="seccion-2">
+            <h2>2. Acceso por Etiqueta</h2>
+            <div class="ejemplo">
+                <p>Párrafo número 1</p>
+                <p>Párrafo número 2</p>
+                <p>Párrafo número 3</p>
+                <span>Este es un span</span>
+                <div>Este es un div</div>
+                <button id="btnTag">Probar getElementsByTagName</button>
+            </div>
+        </section>
+
+        <!-- Sección 3: Elementos para getElementsByClassName -->
+        <section class="seccion" id="seccion-3">
+            <h2>3. Acceso por Clase</h2>
+            <div class="ejemplo">
+                <div class="item">Item con clase "item"</div>
+                <div class="item destacado">Item con clases "item" y "destacado"</div>
+                <div class="item">Otro item con clase "item"</div>
+                <div class="destacado">Solo clase "destacado"</div>
+                <button id="btnClass">Probar getElementsByClassName</button>
+            </div>
+        </section>
+
+        <!-- Sección 4: Elementos para querySelector -->
+        <section class="seccion" id="seccion-4">
+            <h2>4. QuerySelector (Método Moderno)</h2>
+            <div class="ejemplo">
+                <ul id="lista-frutas">
+                    <li class="fruta">Manzana</li>
+                    <li class="fruta favorita">Naranja</li>
+                    <li class="fruta">Plátano</li>
+                </ul>
+                <button>Probar querySelector</button>
+                <button>Probar querySelectorAll</button>
+            </div>
+        </section>
+
+        <!-- Sección 5: Navegación por el DOM -->
+        <section class="seccion" id="seccion-5">
+            <h2>5. Navegación por el DOM</h2>
+            <div class="ejemplo">
+                <div id="contenedor-navegacion">
+                    <h3>Elemento Padre</h3>
+                    <div class="hijo">Primer Hijo</div>
+                    <div class="hijo" id="hijo-central">Hijo Central</div>
+                    <div class="hijo">Último Hijo</div>
+                </div>
+                <button>Explorar Navegación DOM</button>
+            </div>
+        </section>
+
+        <!-- Sección 6: Manipulación de Contenido -->
+        <section class="seccion" id="seccion-6">
+            <h2>6. Manipulación de Contenido</h2>
+            <div class="ejemplo">
+                <div id="contenido-manipulable">
+                    <p>Contenido original</p>
+                    <strong>Texto en negrita</strong>
+                </div>
+                <button>Cambiar innerHTML</button>
+                <button>Cambiar textContent</button>
+                <button>Cambiar innerText</button>
+                <button>Restaurar</button>
+                <button>Leer</button>
+            </div>
+        </section>
+
+        <!-- Sección 7: Manipulación de Atributos -->
+        <section class="seccion" id="seccion-7">
+            <h2>7. Manipulación de Atributos</h2>
+            <div class="ejemplo">
+                <img id="imagen-demo" src="https://portaluchile.uchile.cl//.imaging/default/dam/imagenes/Uchile/imagenes-noticias/155428_2_icei-5-800-l_L/jcr:content.jpg"
+                    alt="Imagen de demostración">
+                <br>
+                <input id="input-demo" type="text" placeholder="Escribe algo aquí" value="Texto inicial">
+                <br>
+                <button>Modificar Atributos</button>
+                <button>Manipular Clases</button>
+            </div>
+        </section>
+
+        <!-- Sección 8: Creación y Eliminación de Elementos -->
+        <section class="seccion" id="seccion-8">
+            <h2>8. Creación y Eliminación de Elementos</h2>
+            <div class="ejemplo">
+                <div id="contenedor-dinamico">
+                    <p>Contenedor para elementos dinámicos</p>
+                </div>
+                <button>Crear Elemento</button>
+                <button>Eliminar Último</button>
+                <button>Insertar al Principio</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
